@@ -1,0 +1,45 @@
+@import './mixins/font-face';
+@import './fonts';
+@import './mixins/screen';
+@import './var';
+@import './base';
+@import './navbar';
+@import './btn';
+@import './double';
+@import './main-header';
+@import './card-icon';
+@import './grid';
+@import './slider';
+@import './gallery';
+@import './news-card';
+@import './form';
+@import './footer';
+@import './social-icons';
+
+body {
+    background-image: url('/img/bg-1.png'), url('/img/bg-2.png'), url('/img/bg-3.png');
+    background-repeat: no-repeat;
+    background-position: 100% 3%, 0 880px, 100% 1200px;
+    background-size: 50%, 17%, 10%;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.we-can, .about-us, .our-works, .our-news {
+    margin-bottom: 225px;
+    @include screen-sm {
+        margin-bottom: 125px;
+    }
+}
+
+.contact-us {
+    padding-bottom: 50px;
+}
+
+.footer {
+    background-color: $blue;
+    padding: 55px 0;
+}

@@ -1,0 +1,30 @@
+.btn {
+    font-family: 'WorkSans-SemiBold';
+    padding: 24px 34px;
+    display: inline-block;
+    border: none;
+    outline: 0;
+}
+
+.btn_square {
+    background-color: rgb(255, 255, 255);
+    box-shadow: $shadow-gray;
+    border-radius: 5px;
+    color: $red;
+}
+
+.btn-red {
+    background-color: $red;
+    box-shadow: $shadow-red;
+    border-radius: 1000px;
+    color: $white;
+}
+
+.btn-transparent {
+    color: $blue;
+}
+
+.btn-xs {
+    font-size: 0.78rem;
+    padding: 15px 28px;
+}

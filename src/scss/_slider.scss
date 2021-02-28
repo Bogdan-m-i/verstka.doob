@@ -1,0 +1,26 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    &__h {}
+    &__nav {}
+
+    &__window {
+        overflow: hidden;
+    }
+    &__content {
+        display: flex;
+    }
+    &__item {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

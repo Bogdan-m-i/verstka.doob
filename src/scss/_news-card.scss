@@ -1,0 +1,40 @@
+.news-card {
+    box-shadow: 0px 5px 10px 0px rgba(25, 45, 51, 0.15);
+    max-width: 370px;
+    margin: 15px;
+    padding: 50px 40px 40px 40px;
+
+    &__date {
+        color: $gray;
+        font-size: 0.8rem;
+        margin-bottom: 40px;
+    }
+
+    &__h {
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        a {
+            color: $red;
+        }
+    }
+
+    &__p {
+        margin-bottom: 40px;
+    }
+
+    &:hover {
+        background-color: $red;
+
+        .news-card__h > .h4,
+        .news-card__date,
+        .news-card__p,
+        .news-card__link > a {
+            color: $white;
+        }
+    }
+}

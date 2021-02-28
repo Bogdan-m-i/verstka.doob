@@ -1,0 +1,43 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    
+    @include screen-xl { max-width: 960px; }
+    @include screen-lg { max-width: 720px; }
+    @include screen-md { max-width: 540px; padding: 0 1rem; }
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.75rem;
+}
+
+.col, .col-lg, .col-sm {
+    //padding: 0.75rem 0.75rem 0;
+    padding: 0  calc(0.75rem / 2)  0.75rem  calc(0.75rem / 2);
+}
+
+.col {
+    // flex-basis: 0;
+    // flex-grow: 1;
+    // max-width: 100%;
+    flex: 1 0 0%;
+}
+
+.col-lg {
+    flex: 1 0 0%;
+    @include screen-lg {
+        flex: 1 0 100%;
+        margin-bottom: 0.75rem;
+    }
+}
+
+.col-sm {
+    flex: 1 0 0%;
+    @include screen-sm {
+        flex: 1 0 100%;
+        //margin-bottom: 0.75rem;
+    }
+}
